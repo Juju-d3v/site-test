@@ -1,0 +1,283 @@
+/* styles.css */
+
+/* Couleurs */
+:root {
+    --primary-color: #1f5296;
+    --secondary-color: #ff9900;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* En-tête */
+  header {
+    background-color: var(--primary-color);
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #fffcfc;
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+  }
+  
+  /* Bannière */
+  #banner {
+    background-image: url("banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .banner-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+  }
+  
+  h2 {
+    color: #473d3d;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  p {
+    color: #585151;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #ffcc00;
+  }
+  
+  /* Actualités */
+  #news {
+    max-width: 800px;
+    margin: 40px auto;
+  }
+  
+  #news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #news ul li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  h3 {
+    margin: 0;
+  }
+  
+  .read-more {
+    display: inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* Pied de page */
+  footer {
+    background-color: #333;
+    color: #6d6161;
+    padding: 20px;
+    text-align: center;
+  }
+
+  h5 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0055cc;
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0088ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0055cc;
+  }
+  h4 {
+    text-align: center;
+    align-content: center;
+
+  }
+  a {
+    text-align: center;
+    align-content: center;
+
+  }
+  /* Styles CSS pour la page de rapport de bug */
+
+body {
+  font-family: Arial, sans-serif;
+
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #0088ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0055cc;
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #0088ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+inscription{
+  color: black;
+}
