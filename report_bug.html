@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rapport de Bug - Serveur Rubidium</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Lien vers la feuille de style CSS personnalisée -->
+</head>
+<body>
+  <header>
+    <h1>Serveur Rubidium</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="mods.html">Mods</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="bug-report.html" class="active">Rapport de Bug</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="rapport de bug">
+      <h2>Rapport de Bug</h2>
+      <form action="send-report.php" method="POST">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="description">Description du bug :</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <input type="submit" value="Envoyer le rapport" class="button">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Serveur Rubidium. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
